@@ -1,61 +1,78 @@
 <!doctype html>
-<li>HTML</li>
-<li>CSS</li>
-<li>JavaScript</li>
-<li>GitHub</li>
-<li>Responsive Design</li>
-</ul>
-</section>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Priti Das Dipa — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="header container">
+    <h1 class="name">Priti Das dipa</h1>
+    <nav class="nav">
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
+  <section class="hero container" id="home">
+    <img class="profile" alt="Priti Das Dipa" src="profile.jpg">
+    <h2>Hi — I’m <span class="accent">Priti Das Dipa</span></h2>
+    <p class="tagline">Aspiring Medical student • Volunteer at Red Cross • RCY for community health</p>
+    <a class="btn" href="#contact">Contact</a>
+  </section>
 
-<section id="projects" class="projects container">
-<h3>Projects</h3>
-<div class="grid">
-<div class="card">
-<h4>Project 1</h4>
-<p>Short description of your first project.</p>
-<a href="#" class="btn small">View</a>
-</div>
-<div class="card">
-<h4>Project 2</h4>
-<p>Short description of your second project.</p>
-<a href="#" class="btn small">View</a>
-</div>
-<div class="card">
-<h4>Project 3</h4>
-<p>Short description of your third project.</p>
-<a href="#" class="btn small">View</a>
-</div>
-</div>
-</section>
+  <main class="container">
+    <section id="about">
+      <h3>About Me</h3>
+      <p>I completed high school in 2024 with strong grades in humanities. I enjoy health, first aid volunteering, and designing small projects that solve community problems. My goal is to study medicine and serve underserved communities.</p>
+    </section>
 
+    <section id="education">
+      <h3>Education</h3>
+      <ul>
+        <li><strong>High School</strong> — XYZ High School (Graduated 2024). GPA: 4.92/5.00 <em>Insert score</em></li>
+        <li>Relevant coursework: Economics, Geography, English, Mathematics</li>
+      </ul>
+    </section>
 
-<section id="contact" class="contact container">
-<h3>Contact Me</h3>
-<form id="contactForm">
-<label for="name">Name</label>
-<input id="name" name="name" type="text" required>
+    <section id="projects">
+      <h3>Projects & Activities</h3>
+      <article class="card">
+        <h4>First Aid Outreach</h4>
+        <p>Led a community first-aid workshop for 50+ students through RCY (Red Cross Youth).</p>
+        <p><strong>Skills:</strong> First aid, leadership, public speaking</p>
+      </article>
+      <article class="card">
+        <h4>Science Fair Project</h4>
+        <p>Research project on water purification methods — won school-level prize.</p>
+      </article>
+    </section>
 
+    <section id="achievements">
+      <h3>Achievements</h3>
+      <ul>
+        <li>Certificate — Red Cross Youth First Aid (2023)</li>
+        <li>Gold Medal — Regional Science Fair (2022)</li>
+      </ul>
+    </section>
 
-<label for="email">Email</label>
-<input id="email" name="email" type="email" required>
+    <section id="contact">
+      <h3>Contact</h3>
+      <p>Email: <a href="mailto:dipapritidas@gmail.com">dipapritidas@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/priti-das-dipa">www.linkedin.com/in/priti-das-dipa</a></p>
+    </section>
+  </main>
 
+  <footer class="footer container">
+    <p>© <span id="year"></span> Priti Das Dipa — Portfolio for college admission</p>
+  </footer>
 
-<label for="message">Message</label>
-<textarea id="message" name="message" rows="4" required></textarea>
-
-
-<button type="submit" class="btn">Send</button>
-<p id="formStatus"></p>
-</form>
-</section>
-
-
-<footer class="footer">
-<p>© <span id="year"></span> Your Name. Built with ❤️ using HTML, CSS, JS.</p>
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
+</html>
+
 </html>
